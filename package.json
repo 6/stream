@@ -4,6 +4,7 @@
   "dependencies": {
     "coffee-script": "*"
     ,"jade": "*"
+    ,"sass": "*"
     ,"solid": "*"
   },
   "engines": {
