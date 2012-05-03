@@ -1,11 +1,13 @@
-scraper = require 'scraper'
-opts =
-  uri: 'http://www.watchanimeon.com/anime-list/'
-  headers:
-    'User-Agent': 'Mozilla/5.0 (compatible; Gigabot/0.1; +http://github.com/GIGADRILL/stream)'
+BaseScraper = require('./base_scraper').BaseScraper
 
-scraper opts, (e, $) ->
-  return console.log "ERROR", e if e?
-  $(".postlist").each ->
-    $(@).find("a").each ->
-      console.log $(@).text(), "--> #{$(@).attr("href")}"
+class WaoScraper extends BaseScraper
+  cb_find: ($) ->
+    $(".postlist").each ->
+      $(@).find("a").each ->
+        console.log $(@).text(), "--> #{$(@).attr("href")}"
+
+  main: ->
+    @scrape 'http://www.watchanimeon.com/anime-list/', @cb_find
+
+wao = new WaoScraper
+wao.main()
