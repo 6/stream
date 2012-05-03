@@ -6,6 +6,7 @@ require('solid') {port: process.env.PORT or 8081}, (app) ->
       id: req.params.id
       width: 500
       height: 375
+      autoplay: true
 
 _layout = (t, template, opts = {}, locals = {}, layout = 'layout') ->
   body = t.jade template, opts, locals
