@@ -1,18 +1,11 @@
 {
-  "author": "",
   "name": "stream",
-  "version": "0.0.0",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/GIGADRILL/stream.git"
-  },
+  "version": "0.0.1",
   "dependencies": {
     "coffee-script": "*"
     ,"jade": "*"
     ,"solid": "*"
   },
-  "devDependencies": {},
-  "optionalDependencies": {},
   "engines": {
     "node": "*"
   }
