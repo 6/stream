@@ -5,6 +5,7 @@
     "coffee-script": "*"
     ,"jade": "*"
     ,"sass": "*"
+    ,"scraper": "0.0.9"
     ,"solid": "*"
   },
   "engines": {
