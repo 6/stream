@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "coffee-script": "*"
+    ,"jade": "*"
     ,"solid": "*"
   },
   "devDependencies": {},
