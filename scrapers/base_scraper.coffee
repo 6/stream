@@ -2,7 +2,6 @@ scraper = require 'scraper'
 
 class exports.BaseScraper
   constructor: (@delay_ms = 5000, @opts = {}) ->
-    @last_scrape = undefined
     @opts.header ?= {}
     @opts.header['User-Agent'] ?= 'Mozilla/5.0 (compatible; Gigabot/0.1; +http://github.com/GIGADRILL/stream)'
   
