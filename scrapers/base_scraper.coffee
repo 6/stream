@@ -14,7 +14,7 @@ class exports.BaseScraper
     @opts.uri = uri
     @last_scrape = new Date()
     scraper @opts, (e, $) ->
-      return console.log "ERROR", e if e?
+      return console.log "ERROR", e, "\nURI:#{uri}", "\nARGS:",args... if e?
       cb($, args...)
   
   save: (data) ->
