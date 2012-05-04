@@ -5,7 +5,7 @@
     "coffee-script": "*"
     ,"jade": "*"
     ,"sass": "*"
-    ,"scraper": "0.0.9"
+    ,"scraper": "git://github.com/jondot/node-scraper.git"
     ,"solid": "*"
   },
   "engines": {
